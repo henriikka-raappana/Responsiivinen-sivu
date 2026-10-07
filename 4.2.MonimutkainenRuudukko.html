@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid 3 - Monimutkainen ruudukko</title>
+
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            grid-template-rows: auto auto;
+            gap: 10px;
+            padding: 20px;
+            background-color: #f9fbe7;
+        }
+
+        .grid-item {
+            background-color: #dcedc8;
+            padding: 20px;
+            text-align: center;
+        }
+
+        @media screen and (max-width: 768px) {
+            .grid-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Grid 3 - Muonimutkainen ruudukko</h1>
+    <div class="grid-container">
+        <div class="grid-item" style="grid-column: 1 / 3;">Laaja sisältö</div>
+        <div class="grid-item">sisältö 2</div>
+        <div class="grid-item">sisältö 3</div>
+        <div class="grid-item" style="grid-column: 1 / -1;">Koko rivin sisältö</div>
+    </div>
+    <p>En osaa sanoa mikä puuttuu ohjeesta</p>
+</body>
+</html>

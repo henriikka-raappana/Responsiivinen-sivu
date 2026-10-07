@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footer 2 - Kehittyneempi Footer</title>
+
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        main {
+            flex: 1;
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #455a64;
+            color: #eceff1;
+            padding: 20px;
+            text-align: center;
+            font-size: 0.9em;
+        }
+
+        .footer-links {
+            list-style: none;
+            padding: 0;
+            margin: 10px 0;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .footer-links li a {
+            color: #ffcc80;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Sivun pääsisältö</h1>
+        <p>Tässä esimerkki kehittyneemmästä footerista jossa on linkkejä ja lisätietoja</p>
+    </main>
+
+    <footer>
+        <ul class="footer-links">
+            <li><a href="#">Tietoa meistä</a></li>
+            <li><a href="#">Yhteystiedot</a></li>
+            <li><a href="#">Palveluehdot</a></li>
+        </ul>
+        <p>&copy; 2026 Sivun tekijä. Kaikki oikeudet pidätetään</p>
+    </footer>
+</body>
+</html>

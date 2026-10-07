@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsiivinen sivu 1</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header,
+        footer {
+            background-color: #37474f;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        main {
+            padding: 20px;
+            padding: 20px;
+            flex: 1;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-around;
+            background-color: #455a64;
+            padding: 10px;
+            flex-wrap: wrap;
+        }
+
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            padding: 5px 10px;
+        }
+
+        .content-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .content-grid div {
+            background-color: #cfd8dc;
+            padding: 20px;
+            text-align: center;
+        }
+
+        @media screen and (max-width: 600px) {
+            .navbar {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Responsiivinen sivu</h1>
+    </header>
+    <nav class="navbar">
+        <a href="#">Etusivut</a>
+        <a href="#">Palvelut</a>
+        <a href="#">Tietoa</a>
+        <a href="#">Yhteystiedot</a>
+    </nav>
+
+    <main>
+        <section class="content-grid">
+            <div>Osio 1</div>
+            <div>Osio 2</div>
+            <div>Osio 3</div>
+            <div>Osio 4</div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Responsiivinen sivupohja</p>
+    </footer>
+</body>
+</html>

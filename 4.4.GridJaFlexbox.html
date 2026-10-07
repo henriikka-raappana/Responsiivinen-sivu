@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid 5 - Yhdistetty asettelu</title>
+
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 20px;
+            padding: 20px;
+            background-color: #fff3e0;
+        }
+
+        .sidebar {
+            background-color: #ffe0b2;
+            padding: 20px;
+        }
+
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            background-color: #ffe082;
+            padding: 20px;
+        }
+
+        .content-item {
+            background-color: #ffcc80;
+            padding: 10px;
+            flex: 1 1 150px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Grid 5 - Yhdistetty Grid ja Flexbox</h1>
+    <div class="grid-container">
+        <aside class="sidebar">
+            <h2>Sivupalkki</h2>
+            <p>Tämä on staattista sisältöä</p>
+        </aside>
+        <section class="content">
+            <div class="content-item">Item 1</div>
+            <div class="content-item">Item 2</div>
+            <div class="content-item">Item 3</div>
+            <div class="content-item">Item 4</div>
+        </section>
+    </div>
+</body>
+</html>
