@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsiiviset lomakkeet</title>
+
+    <style>
+        .lomake {
+            display: grid;
+            gap: 1rem;
+        }
+
+        .lomake input,
+        .lomake textarea {
+            box-sizing: border-box;
+            width: 100%;
+            min-width: 0;
+            font: inherit;
+            padding: 0.75rem;
+}
+
+        .lomake label {
+            display: block;
+        }
+
+        @media (min-width: 45rem) {
+            .lomake {
+                grid-template-columns: 1fr 1fr;
+            }
+            .lomake button {
+                grid-column: 1 / -1;
+            }
+        }
+    </style>
+</head>
+<body>
+<form class="lomake">
+    <div>
+        <label for="Nimi">Nimi</label>
+        <input id="Nimi" name="Nimi" autocomplete="name" required>
+    </div>
+
+    <div>
+        <label for="email">Sähköposti</label>
+        <input id="email" name="email" type="email" autocomplete="email" required>
+        <small>Anna voimassa oleva sähköpostiosoite.</small>
+    </div>
+
+    <div>
+        <label for="lisatiedot">Lisätiedot</label>
+        <textarea id="lisatiedot" name="lisatiedot" rows="5" required></textarea>
+    </div>
+
+    <button type="submit">Ilmottaudu</button>
+</form>
+</body>
+</html>

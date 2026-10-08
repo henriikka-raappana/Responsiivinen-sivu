@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taulukot pienellä näytöllä</title>
+
+    <style>
+        .taulukkoalue {
+            max-width: 100%;
+            overflow-x: auto;
+        }
+
+        table {
+            width: 100%;
+            min-width: 35rem;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 0.75rem;
+            text-align: left;
+            border-bottom: 1px solid #aaa;
+        }
+
+        .taulukkoalue:focus-visible {
+            outline: 3px solid #9c4300;
+        }
+    </style>
+</head>
+<body>
+
+<div class="taulukkoalue" tabindex="0" role="region" aria-label="Ohjelmataulukko, vieritettävä alue">
+    <table>
+        <caption>Tapahtuman ohjelma</caption>
+
+        <thead>
+            <tr>
+                <th scope="col">Aika</th>
+                <th scope="col">Ohjelma</th>
+                <th scope="col">Paikka</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>12.00</td>
+                <td>Taidetyöpaja</td>
+                <td>Työpajateltta</td>
+            </tr>
+
+            <tr>
+                <td>13.00</td>
+                <td>Ompelutyöpaja</td>
+                <td>Työpajateltta</td>
+            </tr>
+
+            <tr>
+                <td>14.00</td>
+                <td>Kirjallisuustyöpaja</td>
+                <td>Työpajateltta</td>
+            </tr>
+
+            <tr>
+                <td>15.00</td>
+                <td>Musiikkityöpaja</td>
+                <td>Työpajateltta</td>
+            </tr>
+
+            <tr>
+                <td>16.00</td>
+                <td>Pelityöpaja</td>
+                <td>Työpajateltta</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+</body>
+</html>

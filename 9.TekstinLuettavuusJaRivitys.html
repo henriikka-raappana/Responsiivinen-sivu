@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tekstin luettavuus ja rivitys</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .teksti {
+            max-width: 65ch;
+            margin-inline: auto;
+            font-size: 1rem;
+            line-height: 1.6;
+            overflow-wrap: anywhere;
+        }
+
+        .teksti p {
+            margin-block: 0 1rem;
+        }
+
+        header,
+        footer {
+            background-color: #1b1b1b;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-around;
+            background-color: #000000;
+            padding: 10px;
+            flex-wrap: wrap;
+        }
+
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            padding: 5px 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Bölölölölölölölölöö</h1>
+    </header>
+
+    <nav class="navbar">
+        <a href="#">Esittely</a>
+        <a href="#">Html ja CSS</a>
+        <a href="#">Koodit ja vinkit</a>
+        <a href="#">Yhteystiedot</a>
+    </nav>
+
+    <article class="teksti" lang="fi">
+        <h1>Tekstin luettavuus ja rivitys</h1>
+        <p>Lukkee tos otsikos</p>
+    </article>
+
+    <div class="teksti">
+        <p>Kun verkkosivustoa tehdään HTMLä ja CSSä, tekstin luettavuus on yksi tärkeimmistä asioista. Vaikka sivustolla olisi paljon hyödyllistä tietoa, käyttäjän on vaikea lukea sitä, jos teksti on liian pientä, rivit ovat liian pitkiä tai eri tekstiosat ovat liian lähellä toisiaan. Hyvä luettavuus tekee sivustosta miellyttävämmän käyttää ja auttaa käyttäjää löytämään tarvitsemansa tiedon nopeasti. Siksi tekstin kokoa, fonttia, värejä, riviväliä ja tekstin sijoittelua kannattaa miettiä jo sivustoa suunniteltaessa.</p>
+        <p>Rivitys vaikuttaa erityisesti siihen, kuinka helposti tekstiä pystyy seuraamaan. Jos yksi tekstirivi on erittäin pitkä, silmien on vaikeampi löytää seuraavan rivin alkua. Toisaalta liian lyhyet rivit voivat tehdä tekstistä katkonaisen ja aiheuttaa paljon hyppimistä riviltä toiselle. CSSä tekstin leveyttä voidaan rajoittaa esimerkiksi max-width-ominaisuudella. Myös line-height-ominaisuudella voidaan säätää rivien välistä korkeutta, jolloin teksti ei näytä liian tiiviiltä. Esimerkiksi pitkille tekstikappaleille sopiva riviväli voi tehdä lukemisesta huomattavasti mukavampaa.</p>
+        <p>Myös kappaleiden ja muiden sisältöjen väliin jätetty tyhjä tila on tärkeää. HTMLä teksti kannattaa jakaa selkeisiin kappaleisiin <p>-elementeillä sen sijaan, että kaikki teksti kirjoitetaan yhtenä suurena tekstimassana. CSS margin- ja padding-ominaisuuksilla voidaan lisätä sopivasti tilaa kappaleiden ja muiden elementtien ympärille. Otsikoiden, kappaleiden, listojen ja kuvien erilainen sijoittelu auttaa käyttäjää hahmottamaan sivuston rakenteen. Myös tekstin värin ja taustan välillä täytyy olla riittävä kontrasti, jotta teksti näkyy helposti.</p>
+        <p>Hyvä nyrkkisääntö on pitää sivusto yksinkertaisena ja testata sitä oikealla tavalla eri kokoisilla näytöillä. Kannattaa tarkistaa, että teksti on helppoa lukea sekä tietokoneella että puhelimella ja että rivit eivät veny liian pitkiksi. Fonttikoko, riviväli, tekstin leveys ja tyhjä tila kannattaa säätää niin, että sivu tuntuu selkeältä eikä käyttäjän tarvitse nähdä vaivaa tekstin lukemiseen. Hyvin suunniteltu rivitys ja luettavuus eivät siis ole vain ulkonäköasioita, vaan ne vaikuttavat suoraan siihen, kuinka helppoa ja miellyttävää verkkosivuston käyttäminen on.</p>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Luettavuus Oy</p>
+    </footer>
+</body>
+</html>

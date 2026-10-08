@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Komponentin oma responsiivisuus</title>
+
+    <style>
+        .korttipaikka {
+            container-type: inline-size;
+        }
+
+        .kortti {
+            display: grid;
+            gap: 1rem;
+        }
+
+        .kortti img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        @container (min-width: 28rem) {
+            .kortti {
+                grid-template-columns: 1fr 2fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="korttipaikka">
+        <div class="kortti">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThQIMmATyNUPKvPRnqqMvSLc_dG0tWW5p5qXAzq-WFAw&s=10" alt="kissa">
+
+            <div>
+                <h2>Blääblää otsikko</h2>
+                <p>Sanoja sanoja joista tulee yksi lause blää kato vihasta kissaa</p>
+                <button>nappi</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ylivuoto ja pitkät sisällöt</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .kortit {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 1rem;
+        }
+
+        .kortti {
+            min-width: 0;
+            overflow-wrap: anywhere;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        @media (max-width: 35rem) {
+        .kortit {
+            grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Maailman tärkeimmät tapahtumat</h1>
+
+    <div class="kortit">
+
+        <div class="kortti">
+            <h2>SUURI PERUNAKOKOUS - Tule ja opi, miksi peruna ei vieläkään tiedä mitä siltä odotetaan</h2>
+            <p>La 24.5.2025</p>
+            <a href="#">
+                https://esimerkki.fi/tapahtumat/erittäinpitkäkatkeamatonperunakokouslinkkijokajatkuuvieläkinpidempäänkoska-peruna-vaatii-tilaa
+            </a>
+        </div>
+
+        <div class="kortti">
+            <h2>KANAN HISTORIALLINEN JUOKSUKILPAILU - 47 kanaa, yksi rata ja aivan liikaa itsevarmuutta</h2>
+            <p>La 24.5.2026</p>
+            <a href="#">
+                https://esimerkki.fi/tapahtumat/maailmanpisinlinkkikanajuoksukilpailuunkoskaemmekeksineetmitäänlyhyempää
+            </a>
+        </div>
+    </div>
+
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUagjfTLO_9GuE8lbuzZd5NvuK01o1SKyB4lR112Amaw&s=10" alt="Erittäin tärkeä kuva perunoista">
+    <p>Erittäin tärkeä kuva perunoista</p>
+</body>
+</html

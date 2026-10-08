@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mukautuva tekstikoko - clamp()</title>
+
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+
+        h1 {
+            font-size: clamp(2rem, 1rem + 3vw, 4rem);
+            line-height: 1.15;
+        }
+
+        p {
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tää on otsikko</h1>
+    <p>Tässä pitäs olla paljon tekstiä mut en nyt jaksa keksiä mittää, eihän aivot toimi tähän aikaan, ei oo luonnollista herätä ennen tyylii kymppiä ja tää on ihan tieteellisestikkin todistettu MUTTAKO VALTIO TAHTOO ETTÄ OLLAAN AJATTELEMATTOMIA TOTTELEVIA TYÖ ORJIA</p>
+</body>
+</html>
